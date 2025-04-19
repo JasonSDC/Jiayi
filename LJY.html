@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jiayi Li | Academic Homepage</title>
+  <style>
+    :root {
+      --primary-color: #0066cc;
+      --secondary-color: #f3f7fb;
+      --text-color: #333;
+      --heading-color: #1a1a1a;
+      --accent-color: #e6f0ff;
+      --border-color: #e0e0e0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      line-height: 1.7;
+      background: #fff;
+      color: var(--text-color);
+    }
+    .container { display: flex; flex-direction: column; gap: 40px; }
+    .header {
+      display: flex; align-items: center; flex-wrap: wrap;
+      gap: 30px; padding-bottom: 30px; border-bottom: 1px solid var(--border-color);
+    }
+    .profile-img {
+      width: 180px; height: 180px; object-fit: cover;
+      border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .header-content { flex: 1; }
+    h1 { font-size: 2.5rem; margin-bottom: 15px; color: var(--heading-color); }
+    h2 {
+      font-size: 1.5rem; margin-bottom: 20px; padding-bottom: 10px;
+      border-bottom: 2px solid var(--accent-color); color: var(--heading-color);
+    }
+    a { color: var(--primary-color); text-decoration: none; transition: color 0.2s; }
+    a:hover { color: #004999; text-decoration: underline; }
+    .section {
+      margin-top: 40px; background: #fff;
+      border-radius: 8px; padding: 25px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+    .contact-info { display: flex; flex-wrap: wrap; gap: 15px; }
+    .contact-item { display: flex; align-items: center; gap: 8px; }
+    .contact-icon { color: var(--primary-color); }
+    .experience-item, .education-item {
+      margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid var(--border-color);
+    }
+    .experience-item:last-child, .education-item:last-child {
+      border-bottom: none; padding-bottom: 0; margin-bottom: 0;
+    }
+    .item-header {
+      display: flex; justify-content: space-between; margin-bottom: 8px;
+    }
+    .item-title { font-weight: bold; font-size: 1.1rem; }
+    .item-subtitle { color: #666; font-style: italic; }
+    .item-date { color: #666; font-style: italic; }
+    ul { list-style-position: inside; margin-top: 10px; }
+    li { margin-bottom: 5px; }
+    .skills-container { display: flex; flex-wrap: wrap; gap: 15px 30px; }
+    .skill-category { flex: 1; min-width: 200px; }
+    .skill-title {
+      font-weight: bold; margin-bottom: 8px;
+      color: var(--primary-color);
+    }
+    .skill-list { display: flex; flex-wrap: wrap; gap: 5px; }
+    .skill-item {
+      background-color: var(--accent-color); padding: 5px 10px;
+      border-radius: 15px; font-size: 0.9rem;
+    }
+    @media (max-width: 768px) {
+      .header { flex-direction: column; align-items: flex-start; }
+      .profile-img { width: 150px; height: 150px; }
+      .contact-info { flex-direction: column; gap: 10px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <img src="LJY.jpg" alt="Jiayi Li" class="profile-img" />
+      <div class="header-content">
+        <h1>Jiayi Li</h1>
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">✉️</span>
+            <span>jiayi.6.li@uconn.edu</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📱</span>
+            <span>+86 15100310188</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <span>Shijiazhuang, China</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="section">
+      <h2>🎓 Education</h2>
+      <div class="education-item">
+        <div class="item-header">
+          <span class="item-title">Washington University in St. Louis</span>
+          <span class="item-date">Aug 2024 - Dec 2025</span>
+        </div>
+        <div class="item-subtitle">M.S. in Business Analytics</div>
+      </div>
+      <div class="education-item">
+        <div class="item-header">
+          <span class="item-title">University of Connecticut</span>
+          <span class="item-date">Sept 2020 - May 2024</span>
+        </div>
+        <div class="item-subtitle">B.A. in Economics</div>
+        <div>Major GPA: 3.5 / 4.0</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>💼 Experience</h2>
+      <div class="experience-item">
+        <div class="item-header">
+          <span class="item-title">Operations Part-time Assistant</span>
+          <span class="item-date">June 2022 - July 2022</span>
+        </div>
+        <div class="item-subtitle">Ping An Insurance Company, Ltd., Shijiazhuang</div>
+        <ul>
+          <li>Assisted Operations Manager with the planning and execution of tasks for the local division</li>
+          <li>Helped craft growth strategies, yearly work plans, and performance objectives</li>
+          <li>Compiled and analyzed operational data to support decision making and reporting</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>🔧 Skills</h2>
+      <div class="skills-container">
+        <div class="skill-category">
+          <div class="skill-title">Tools & Languages</div>
+          <div class="skill-list">
+            <div class="skill-item">SQL</div>
+            <div class="skill-item">Python</div>
+            <div class="skill-item">Excel</div>
+            <div class="skill-item">PowerPoint</div>
+            <div class="skill-item">Tableau</div>
+            <div class="skill-item">R</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
